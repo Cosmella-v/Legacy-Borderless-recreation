@@ -21,10 +21,8 @@ $on_game(Loaded) {
         l->queueInMainThread([]{
         KeybindSettingPressedEventV3(Mod::get(), "full-screen").listen([](Keybind const &keybind, bool down, bool repeat, double timestamp) {
                 if (down) {
-                    log::debug("pressed?????");
                     if (auto CCEGL = CCEGLView::get()){ // block fullscreen because it broken
                             if (CCEGL->getIsFullscreen()) {
-                                log::debug("blocked?????");
                                 return ListenerResult::Propagate;
                             }
                         }
