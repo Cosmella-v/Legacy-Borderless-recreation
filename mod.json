@@ -1,0 +1,38 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2091",
+		"android": "2.2091",
+		"mac": "2.2091",
+		"ios": "2.2091"
+	},
+	"id": "cosmella.legacyborderlessrecreation",
+	"name": "Legacy Borderless recreation",
+	"version": "v1.0.0",
+	"developer": "Cosmella",
+	"description": "Megahack Legacy Borderless but I guessed how it was made",
+	"early-load" : true,
+	"settings": {
+		"full-screen": {
+			"platforms": ["win"],
+			"name": "Full screen Keybind",
+			"description": "Full screen Keybind",
+			"type": "keybind",
+			"default": ["F7"],
+			"priority": -4
+		},
+		"full-screen-Toggle": {
+			"platforms": ["win"],
+			"name": "Enable full screen",
+			"description": "If it is enabled or not",
+			"type": "bool",
+			"default": false
+		},
+		"free-unlock" : {
+			"name": "Unlock Icons and Colors",
+			"default" : true,
+			"description": "unlock both icon and colors for free",
+			"type": "bool"
+		}
+	}
+}
