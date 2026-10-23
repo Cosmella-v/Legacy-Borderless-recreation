@@ -1,5 +1,5 @@
 {
-	"geode": "5.11.2",
+	"geode": "6.0.0",
 	"gd": {
 		"win": "2.2091",
 		"android": "2.2091",
@@ -27,12 +27,6 @@
 			"description": "If it is enabled or not",
 			"type": "bool",
 			"default": false
-		},
-		"free-unlock" : {
-			"name": "Unlock Icons and Colors",
-			"default" : true,
-			"description": "unlock both icon and colors for free",
-			"type": "bool"
 		}
 	}
 }
