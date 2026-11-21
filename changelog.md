@@ -1,2 +1,2 @@
 # 1.0.0
-- Edit this file to change your mod's changelog.
+- A borderless fullscreen based on megahack's one (idk what i'm doing tho)keybind to enter and exit it

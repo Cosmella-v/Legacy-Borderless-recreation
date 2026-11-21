@@ -44,6 +44,7 @@ $on_game(Loaded) {
 }
 // these patches are free resizing but for fixing the edges of fullscreen
 // well it also allows free resize but you can't really do anything with that
+// they are based on resize window mod (https://github.com/matcool/geode-mods/blob/main/max-window/main.cpp)
 static const std::vector<Sig::Patch> cAspectPatch = {
     // WM_SIZING drag enforcement (applyAspectRatio) -> ret
     {
@@ -71,9 +72,11 @@ static const std::vector<Sig::Patch> cAspectPatch = {
     
 };
 $on_game(TexturesUnloaded) {
-    Cosmella::FakeFullScreen::setFakeFullscreen(false);
+    // forces a exit to get the game unstuck (lazy fix lol)
+    Cosmella::FakeFullScreen::setFakeFullscreen(false); 
 };
 $on_game(TexturesLoaded) {
+    // after the game loads textures just so it doesn't get stuck
     loadFullscreen();
 };
 
