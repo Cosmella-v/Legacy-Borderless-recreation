@@ -8,7 +8,7 @@
 	},
 	"id": "cosmella.legacyborderlessrecreation",
 	"name": "Legacy Borderless recreation",
-	"version": "v1.0.0",
+	"version": "v1.0.1-beta.1",
 	"developer": "Cosmella",
 	"description": "Megahack Legacy Borderless but I guessed how it was made",
 	"early-load" : true,
